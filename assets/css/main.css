@@ -1140,9 +1140,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1618,6 +1621,23 @@ input, select, textarea {
 				padding: 3rem 1.5rem 0.5rem 1.5rem ;
 			}
 
+		}
+
+		/* customizatoin by SAM LAM */
+		#main .work {
+			font-weight: bold;
+		}
+
+		#main .header1 {
+			color: tan;
+			font-size: x-large;
+		}
+
+		
+		#main .header2 {
+			color: lightsteelblue;
+			font-style: italic;
+			font-size: large;
 		}
 
 /* Footer */
