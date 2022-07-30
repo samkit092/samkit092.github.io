@@ -300,17 +300,24 @@
 
 				// Prevent clicks from inside article from bubbling.
 					$this.on('click', function(event) {
-						event.stopPropagation();
+						console.log(event.target);
+						//Sam: Check if clicked DOM object is related to carousel controls
+						if (!event.target.classList.contains('carousel-control-prev-icon')&&!event.target.classList.contains('carousel-control-next-icon'))
+							event.stopPropagation();
 					});
 
 			});
 
 		// Events.
 			$body.on('click', function(event) {
-
-				// Article visible? Hide.
-					if ($body.hasClass('is-article-visible'))
-						$main._hide(true);
+				
+				//Sam: Check if clicked DOM object is related to carousel controls
+				if (event.target.classList.contains('carousel-control-prev-icon')||event.target.classList.contains('carousel-control-next-icon'))
+					return;
+				
+					// Article visible? Hide.
+				if ($body.hasClass('is-article-visible'))
+					$main._hide(true);
 
 			});
 
