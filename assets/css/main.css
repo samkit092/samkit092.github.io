@@ -1627,7 +1627,7 @@ input, select, textarea {
 
 		}
 
-		/* customizatoin by SAM LAM */
+		/* customization by SAM LAM */
 		#main .work {
 			font-weight: bold;
 		}
@@ -1644,8 +1644,12 @@ input, select, textarea {
 			font-size: large;
 		}
 
-		#main .keywords{
+		#main .keywords {
 			color: greenyellow;
+		}
+
+		#main .carousel {
+			margin: 0 0 1rem 0;
 		}
 
 /* Footer */
