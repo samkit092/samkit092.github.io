@@ -152,7 +152,9 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
+		/* avoid dotted line in carousel
+			border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
+		*/
 		text-decoration: none;
 		color: inherit;
 	}
@@ -1650,6 +1652,18 @@ input, select, textarea {
 
 		#main .carousel {
 			margin: 0 0 1rem 0;
+		}
+
+		#main .vertical {
+			width: 50%;
+		}
+
+		#main .horizontal {
+			width: 100%;
+		}
+
+		.carousel-control-prev-icon, .carousel-control-next-icon {
+			filter: invert(100%);
 		}
 
 /* Footer */
